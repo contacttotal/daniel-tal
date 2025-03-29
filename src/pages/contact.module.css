@@ -1,0 +1,157 @@
+.contact {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--color-clay); */
+}
+
+.container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Helvetica";
+
+  color: var(--color-charcoal);
+  h1 {
+    margin-bottom: 90px;
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: "Horizon";
+  }
+
+  h2 {
+    font-family: "Horizon";
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    .input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      label {
+        color: var(--color-charcoal);
+        font-size: 18px;
+      }
+
+      input,
+      textarea {
+        border: 5px solid var(--color-charcoal);
+        background-color: white;
+        padding: 15px;
+        width: 100%;
+        color: var(--color-charcoal);
+        font-size: 22px;
+      }
+
+      textarea {
+        resize: vertical;
+        width: 100%;
+        min-height: 100px;
+      }
+      label {
+        font-weight: bold;
+      }
+    }
+
+    .submit {
+      width: 75%;
+      background-color: var(--color-charcoal);
+      font-family: "Horizon";
+      color: var(--color-clay);
+      border: none;
+      padding: 15px;
+      margin-top: unset;
+      border-radius: 17.5px;
+    }
+  }
+  .button-back {
+    background-color: transparent;
+    border: none;
+    margin-top: 100px;
+    color: var(--color-charcoal);
+  }
+}
+
+@media (max-width: 880px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 21px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+
+    .submit {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-height: 900px) {
+  form .button-back {
+    margin-top: 5vh !important;
+  }
+}
+
+@media (max-height: 800px) {
+  .container {
+    margin-bottom: 50px;
+  }
+  .button-back {
+    margin-top: 3vh !important;
+  }
+
+  h1 {
+    margin-bottom: 3vh !important;
+  }
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid var(--color-charcoal);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin-top: 40px;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

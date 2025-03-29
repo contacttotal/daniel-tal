@@ -1,0 +1,260 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.mySwiper {
+  height: 100vh !important;
+  margin: 0;
+  padding: 0;
+
+  .swiper-slide.swiper-slide-active {
+    height: 101vh !important;
+  }
+
+  .video-container {
+    width: 100vw;
+
+    video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 24px;
+  background: #f0f0f0;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper .swiper-wrapper {
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.8, 0.5, 1);
+  -o-transition-timease-in-outg-function: cubic-bezier(0.25, 0.8, 0.5, 1);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.text-navigation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 925px;
+  margin: 0 auto;
+  z-index: 5;
+}
+
+/* 880 */
+
+@media (max-width: 880px) {
+  .text-navigation {
+    width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .text-navigation {
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+
+.text-navigation .swiper-slide {
+  font-size: 3.2rem;
+  background-color: transparent;
+  color: white;
+}
+
+/*----------------------------------------*/
+
+/* Cursor with Play Text */
+
+.my-cursor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  gap: 7px;
+  color: white;
+  span {
+    font-size: 16px;
+  }
+}
+
+.video-container {
+  position: relative;
+  height: 100%;
+  cursor: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.footer .count {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+
+.footer .footer__nav {
+  padding: 0;
+  margin: 0;
+  margin-right: 60px;
+  display: flex;
+  gap: 20px;
+  height: 100px;
+  width: 100px;
+  align-items: center;
+
+  li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  li:hover {
+    transform: skew(1.5);
+  }
+}
+
+/* Hide the Swiper container and make the video fullscreen */
+.fullscreen-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 10;
+  display: none;
+  transition: opacity 1s;
+  opacity: 0;
+  cursor: none;
+}
+
+.header-player {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  font-family: Helvetica;
+  position: absolute;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+
+  span {
+    color: var(--color-clay);
+  }
+}
+
+.button-cancel {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 20;
+  height: 50px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-clay);
+}
+
+.fullscreen-video.active {
+  display: block;
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .mySwiper video {
+    height: 100%;
+  }
+}
+
+@media (max-width: 476px) {
+  .mySwiper video {
+    width: 100vw !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-player .title {
+    display: flex;
+  }
+
+  .button-cancel {
+    top: -7px;
+    right: 50px;
+  }
+  .my-cursor {
+    display: none;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.slide-up-enter {
+  animation: slideUp 1s ease forwards;
+}
+
+.fullscreen-video .header-player {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.fullscreen-video .header-player.hidden {
+  opacity: 0;
+  pointer-events: none; /* Optional: prevents interactions when hidden */
+}
