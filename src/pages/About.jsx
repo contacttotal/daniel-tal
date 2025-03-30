@@ -41,20 +41,12 @@ function About({ isMobile }) {
               <span>NOSTALGIC AND NOW.</span>
             </div>
             <div className={`${styles["subtitle"]} ${styles["subtitle--mobile"]}`}>
-              <span>DANIEL TAL IS A DIRECTOR AND PRODUCER WHO</span>
-              <span>SPECIALIZES IN COMMERCIALS, MUSIC VIDEOS</span>
-              <span>AND FILMS</span>
+              <span>DANIEL TAL IS A DIRECTOR AND PRODUCER WHO SPECIALIZES IN COMMERCIALS, MUSIC VIDEOS AND FILMS</span>
               <span>
                 <br />
               </span>
-              <span>HIS FILMIC EYE AND INSTINCT FOR NATURALISM</span>
-              <span> COME TOGETHER TO CREATE A BALANCE OF</span>
-              <span> STORY, STYLE AND SUBSTANCE.</span>
-              <span>
-                <br />
-              </span>
-              <span>INSPIRED BY CINEMA, EVERY CHOICE PRIORITIZES</span>
-              <span>THE PROJECT.</span>
+              <span>HIS FILMIC EYE AND INSTINCT FOR NATURALISM COME TOGETHER TO CREATE A BALANCE OF STORY, STYLE AND SUBSTANCE.</span>
+
               <span>
                 <br />
               </span>
