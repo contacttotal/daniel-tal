@@ -58,7 +58,7 @@ button {
     }
   }
   .subtitle {
-    font-size: 1.4rem;
+    font-size: 1.33vw;
     font-weight: bold;
     letter-spacing: 2px;
     margin-top: -20px;
@@ -132,6 +132,7 @@ button {
     }
     .subtitle {
       font-size: 0.9rem;
+      /* font-size: 2.5vw; */
       font-weight: bold;
       letter-spacing: 2px;
       margin-top: -135px;

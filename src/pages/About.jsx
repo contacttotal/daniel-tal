@@ -31,11 +31,6 @@ function About({ isMobile }) {
               <span>
                 <br />
               </span>
-              <span>INSPIRED BY CINEMA, EVERY CHOICE PRIORITIZES</span>
-              <span>THE PROJECT.</span>
-              <span>
-                <br />
-              </span>
               <span>SOPHISTICATED AND MODERN.</span>
               <span>FLOWING AND PRECISE.</span>
               <span>NOSTALGIC AND NOW.</span>

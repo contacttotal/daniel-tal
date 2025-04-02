@@ -9,7 +9,7 @@
 }
 
 .container {
-  width: 500px;
+  width: 35vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,9 +17,9 @@
 
   color: var(--color-charcoal);
   h1 {
-    margin-bottom: 90px;
+    margin-bottom: 3vw;
     font-weight: bolder;
-    font-size: 32px;
+    font-size: 2vw;
     font-family: "Horizon";
   }
 
@@ -53,7 +53,7 @@
       textarea {
         border: 5px solid var(--color-charcoal);
         background-color: white;
-        padding: 15px;
+        padding: 1vw;
         width: 100%;
         color: var(--color-charcoal);
         font-size: 22px;
