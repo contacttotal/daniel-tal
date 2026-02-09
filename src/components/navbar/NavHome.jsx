@@ -1,3 +1,4 @@
+import { videos } from "../../constants.js";
 import { useSlide } from "../../context/slideContext.jsx";
 import styles from "./navbar.module.css";
 
@@ -17,7 +18,7 @@ function NavHome() {
   ) : (
     <div className={`${styles.navbar} header`}>
       <div className={styles.count}>
-        <span>{currentSlide + 1} / 8</span>
+        <span>{currentSlide + 1} / {videos.length}</span>
       </div>
 
       <div className={styles.logo}>

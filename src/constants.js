@@ -8,11 +8,13 @@ export const slides = [
   { src: "/video77.mp4", caption: "Slide 7" },
   { src: "/video88.mp4", caption: "Slide 8" },
 ];
-const BASE_URL="https://firebasestorage.googleapis.com/v0/b/total-website.firebasestorage.app/o/";
+const BASE_URL = "https://firebasestorage.googleapis.com/v0/b/total-website.firebasestorage.app/o/";
 
 
 export const videos = [
   { trailer: `${BASE_URL}trailer_1.mp4?alt=media&token=80a4242c-0896-4760-8291-9dd76bcdf8d1`, vid: `${BASE_URL}video_1.mp4?alt=media&token=dd3d207b-7f2e-43da-bbd2-08735da14ed5`, mobile: `${BASE_URL}VIDEO%201_9X16.mp4?alt=media&token=4a71c5d8-af76-47b9-bf18-a32f6a010c9c` },
+  { trailer: `${BASE_URL}ETERNAL%20CURLS_desktop.mp4?alt=media&token=fe4a08f6-c8e2-4b03-9d49-1cc6153d9c7f`, vid: `${BASE_URL}ETERNAL%20CURLS_desktop.mp4?alt=media&token=fe4a08f6-c8e2-4b03-9d49-1cc6153d9c7f`, mobile: `${BASE_URL}ETERNAL_CURLS_mobile.mp4?alt=media&token=ea44232e-69bf-4881-9718-952cfc375a36` },
+  { trailer: `${BASE_URL}MOMENTS%20-%20NILE_desktop.mp4?alt=media&token=33fe08ab-19a8-4af9-b3b7-e9a0bdc84e48`, vid: `${BASE_URL}MOMENTS%20-%20NILE_desktop.mp4?alt=media&token=33fe08ab-19a8-4af9-b3b7-e9a0bdc84e48`, mobile: `${BASE_URL}MOMENTS%20-%20NILE_mobile.mp4?alt=media&token=3d2da279-e40b-4011-ba83-91abe27fb946` },
   { trailer: `${BASE_URL}trailer_2.mp4?alt=media&token=c981cb85-a7e7-4f8e-a6e4-e01d38a26000`, vid: `${BASE_URL}vide_2.mp4?alt=media&token=ea169ed2-6c5d-497e-983c-b05c962edb78`, mobile: `${BASE_URL}VIDEO%202_9X16.mp4?alt=media&token=ee452c97-3231-4526-ad97-0deba55a5915` },
   { trailer: `${BASE_URL}trailer_3.mp4?alt=media&token=30bc8c40-e1ee-4bbb-9de7-17dad7718e23`, vid: `${BASE_URL}video_3.mp4?alt=media&token=68f423c2-75f5-4290-8f3b-4ff819c63fe7`, mobile: `${BASE_URL}VIDEO%203_9X16.mp4?alt=media&token=615f3c64-b55d-4b59-ad92-e40a6825b302` },
   { trailer: `${BASE_URL}trailer_4.mp4?alt=media&token=df43c823-44df-49a9-965e-74baf9c289a3`, vid: `${BASE_URL}video_4.mp4?alt=media&token=3f71aaa4-64dd-4fc5-a58b-3334fc90703b`, mobile: `${BASE_URL}VIDEO%204_9X16.mp4?alt=media&token=f631b2c1-5e32-437c-906d-2132593dea85` },
@@ -22,20 +24,22 @@ export const videos = [
   { trailer: `${BASE_URL}trailer_8.mp4?alt=media&token=f1485024-1481-4282-8d0b-5f48c97eb09c`, vid: `${BASE_URL}video_8.mp4?alt=media&token=f7671d67-6e44-49b6-a672-bb411fa91725`, mobile: `${BASE_URL}VIDEO%208_9X16.mp4?alt=media&token=91372167-dd29-45b9-bb32-9b7f2387201d` },
 ];
 
-export const info={
-  desktop:`${BASE_URL}info.mp4?alt=media&token=fd4e3080-439a-49a6-8578-963545923ccb`,
-  mobile:`${BASE_URL}info_mobile.mp4?alt=media&token=4a9e0ba5-389d-4fb0-9d11-43fba31358b4`
+export const info = {
+  desktop: `${BASE_URL}info.mp4?alt=media&token=fd4e3080-439a-49a6-8578-963545923ccb`,
+  mobile: `${BASE_URL}info_mobile.mp4?alt=media&token=4a9e0ba5-389d-4fb0-9d11-43fba31358b4`
 }
 
-export const contact={
-  desktop:`${BASE_URL}contact.mp4?alt=media&token=993d5c53-f9c5-473c-9a31-b359a95ea1f3`,
-  mobile:`${BASE_URL}contact_mobile.mp4?alt=media&token=efc77688-caef-425e-84b8-d23b6964a3b1`
+export const contact = {
+  desktop: `${BASE_URL}contact.mp4?alt=media&token=993d5c53-f9c5-473c-9a31-b359a95ea1f3`,
+  mobile: `${BASE_URL}contact_mobile.mp4?alt=media&token=efc77688-caef-425e-84b8-d23b6964a3b1`
 }
 
 export const menu = `${BASE_URL}menu.mp4?alt=media&token=1f71e9df-5b17-4b69-9fac-0b91babc8339`
 
 export const sentences = [
   { title: "ANYTHING ROOTS", author: "ROOTS" },
+  { title: "ETERNAL CURLS", author: "ORIBE" },
+  { title: "MOMENTS", author: "NILE COFFEE CLUB" },
   { title: "THE LONG LIST", author: "POLARIS MUSIC PRIZE" },
   { title: "JEREMY DUTCHER | GRAVEYARDS", author: "SIRIUSXM" },
   { title: "MNOP", author: "MONEY NUMBER ONE PLUS" },

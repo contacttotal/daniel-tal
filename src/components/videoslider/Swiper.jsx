@@ -125,12 +125,13 @@ export default function SwiperSlider() {
     setCurrentSlide(swiper.realIndex);
   };
 
-  const showLoading = isLoading < 8;
+  const showLoading = isLoading < videos.length;
+
 
   return (
     <div
-     ref={slideDivRef}
-  
+      ref={slideDivRef}
+
     >
       <AnimatePresence>
         {showLoading && (
@@ -246,7 +247,7 @@ export default function SwiperSlider() {
           </div>
 
           <div className={"count-mobile"}>
-            <span>{currentSlide + 1} / 8</span>
+            <span>{currentSlide + 1} / {videos.length}</span>
           </div>
         </div>
       </SlidePage>
