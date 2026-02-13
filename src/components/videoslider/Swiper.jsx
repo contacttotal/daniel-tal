@@ -217,7 +217,7 @@ export default function SwiperSlider() {
             onSlideChange={handleSlideChange}
           >
             {videos.map((slide, i) => (
-              <SwiperSlide key={i} onClick={() => handleVideoClick(slide.vid)}>
+              <SwiperSlide key={i} onClick={() => handleVideoClick( isMobile?slide.mobile: slide.vid)}>
                 <div className="video-container">
                   <video
                     autoPlay={true}
