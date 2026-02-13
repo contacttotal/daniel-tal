@@ -229,7 +229,7 @@ export default function SwiperSlider() {
                     }}
                   >
                     <source
-                      src={isMobile ? slide.mobile : slide.trailer}
+                      src={isMobile ? slide.trailerMobile || slide.mobile : slide.trailerDesktop || slide.trailer}
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.
