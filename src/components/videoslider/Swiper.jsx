@@ -268,7 +268,7 @@ export default function SwiperSlider() {
             height="100%"
             id="video-player"
             style={{
-              objectFit: isMobile ? "contain" : "cover",
+              objectFit: isMobile || sentences[currentSlide].author.toLowerCase().includes("oribe") ? "contain" : "cover",
             }}
             controls
             autoPlay={true}
